@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Video Sync Detector",
+    "version": "1.0",
+    "description": "Detects video play, pause, fast forward, and rewind actions.",
+    "permissions": ["activeTab", "scripting", "sidePanel"],
+    "host_permissions": ["*://*.youtube.com/*"],
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "side_panel": {
+      "default_path": "sidepanel.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Video Sync Detector"
+    }
+  }
+  
