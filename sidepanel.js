@@ -24,7 +24,7 @@ chrome.runtime.onMessage.addListener((message) => {
         }
         else if (message.status==="Paused")
         {
-            sideVideo.pause();
+            sideVideo.pause();//to pause
         }
     }
 });
