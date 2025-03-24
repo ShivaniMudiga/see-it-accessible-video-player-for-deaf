@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Sync Status</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <h2>SignEase</h2>
+    <p>Watch your content in Sign Language</p>
+    
+    <!-- Input for Unique Video ID -->
+    <input type="text" id="videoIdInput" placeholder="Enter Unique Video ID">
+    <button id="fetchVideoBtn">Load Video</button>
+    
+    <p id="status">No video detected.</p>
+
+    <!-- Video Player -->
+    <video id="sideVideo" width="300" controls>
+        <source id="videoSource" src="" type="video/mp4">
+        Your video will appear here...
+    </video> 
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "SeeIT - See The Sound",
+  "version": "1.0",
+  "description": "Detects video play, pause, fast forward, and rewind actions.",
+  "permissions": ["activeTab", "scripting", "sidePanel"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "background": {
+      "service_worker": "service-worker.js"
+  },
+  "side_panel": {
+      "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+      {
+          "matches": ["*://*.youtube.com/*"],
+          "js": ["content-script.js"]
+      }
+  ],
+  "action": {
+      "default_icon": "icon.png",
+      "default_title": "Video Sync Detector"
+  },
+  "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+  }
+}
+
