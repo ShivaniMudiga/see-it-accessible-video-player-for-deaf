@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <h1>SeeIt</h1>
+    <p>Watch your content in Sign Language</p>
+    
+    <!-- Input for Unique Video ID -->
+    <input type="text" id="videoIdInput" placeholder="Enter Unique Video ID">
+    <button id="fetchVideoBtn">Load Video</button>
+    <p></p>
+    <video id="sideVideo" controls>
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p id="status">Status: No Video Detected</p>
+    
+
+    <script src="sidepanel.js"></script>
+</body>
+</html>
