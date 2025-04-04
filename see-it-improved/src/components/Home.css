@@ -1,0 +1,92 @@
+/* src/components/Home.css */
+
+.header {
+    background-color: #051137; /* Updated navbar color */
+    color: white;
+  }
+  
+  .nav-link {
+    color: white;
+    font-weight: 600;
+  }
+  
+  .section-overview {
+    background-color: white;
+    padding: 3rem 0;
+  }
+  
+  .section-benefits {
+    background-color: #f8f9fa; /* Bootstrap light color */
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-title {
+    font-weight: 600;
+  }
+  
+  .step-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .step-1 {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+  }
+  
+  .step-2 {
+    background-color: #ffc107; /* Bootstrap warning color */
+    color: white;
+  }
+  
+  .step-3 {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white;
+  }
+  
+  .step-4 {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+  }
+  
+  .step-5 {
+    background-color: #17a2b8; /* Bootstrap info color */
+    color: white;
+  }
+  
+  .text-primary {
+    color: #007bff !important; /* Bootstrap primary color */
+  }
+  
+  .text-warning {
+    color: #ffc107 !important; /* Bootstrap warning color */
+  }
+  
+  .text-success {
+    color: #28a745 !important; /* Bootstrap success color */
+  }
+  
+  .text-danger {
+    color: #dc3545 !important; /* Bootstrap danger color */
+  }
+  
+  .text-info {
+    color: #17a2b8 !important; /* Bootstrap info color */
+  }
+
+.wide-container {
+    max-width: 1200px; /* Adjust this value as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+.text-home {
+    color: #051137; /* Custom color for Home component */
+}
